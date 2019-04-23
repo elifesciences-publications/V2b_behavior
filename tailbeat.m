@@ -1,5 +1,9 @@
+% This function calculates the average tail beat frequency (TBF) from the Y data of the furthest tail point. 
+% E.g. > tailbeat(m.allTAIL(:,11,1,1)). To accurately calculate a TBF select sequential max and min values with the cursor. 
+
+
 function tailbeat(file)
-%choose points three points to average 
+%choose at least three points to determine frequency 
 h = figure;
 plot(file);
 [x,y] = ginput();
