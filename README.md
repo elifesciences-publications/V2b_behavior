@@ -1,5 +1,5 @@
 # V2b_behavior
-Code used in Callahan et. al. publication "Spinal V2b neurons reveal a role for ipsilateral inhibition in speed control"
+Matlab code used in Callahan et. al. publication "Spinal V2b neurons reveal a role for ipsilateral inhibition in speed control" to track tail movements in head embedded animals. 
 
 Image acquisition and data file structuring:
 
