@@ -1,11 +1,8 @@
-%  SPECIAL version of the code that uses a word input file to iterate
-%  through multiple data sets
-%For a given fish this code should be able to go get all the images and
-% process them and save them.
+%  This code uploades videos saved as .tif files. 
 % 1) chose recording/folder
 % 2) import files for a recording and save with trial number
 % 3) process image
-% 4) save xy, speed, and binary image (200 frame
+% 4) save xy, speed, and binary image (200 frame)
 
 function [allTAIL,partMovie]=all_together_imaging_allatonce2()  % 
     d = uigetdir(pwd, 'Select a folder');
@@ -64,7 +61,7 @@ function [allTAIL,partMovie]=all_together_imaging_allatonce2()  %
         waitbar(j/numberOfRecs,h);
 
     end
-    filename = strcat('tester',fishname)
+    filename = strcat('tester',fishname) % replace tester with an identifying name eg. genotype and date
     save(filename, '-v7.3');
     
 
